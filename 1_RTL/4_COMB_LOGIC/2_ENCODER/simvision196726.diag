@@ -1,0 +1,83 @@
+*** Message Type: info ***
+When: Wed Jul 01 01:49:17 KST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   22.03-s012
+User: hah011
+Host: localhost
+Platform: Linux/x86_64/3.10.0-1160.el7.x86_64
+Started: Wed Jul 01 01:49:17 KST 2026
+Command: /tools/cadence/XCELIUM2203/tools.lnx86/simvision/bin/64bit/simvision.exe interrupt_controller.vcd
+Work Directory: /home/hah011/Basic_SoC_Implementation/1_RTL/4_COMB_LOGIC/2_ENCODER
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:49:18 KST 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:49:25 KST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:49:26 KST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:51:14 KST 2026
+Create schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:51:21 KST 2026
+Connect to Simulator
+      Design: work_lib.tb_interrupt_controller:module
+   Languages: verilog
+   Simulator: Xcelium ppe
+     Version: TOOL:       ippe(64)        22.03-s012
+        User: hah011
+        Host: localhost
+Time Started: Wed Jul 01 01:51:20 KST 2026
+  Process ID: 197139
+   Directory: /home/hah011/Basic_SoC_Implementation/1_RTL/4_COMB_LOGIC/2_ENCODER
+     Command: /tools/cadence/XCELIUM2203/tools.lnx86/simvision/bin/64bit/ippe.exe -nocopyright -nowarn DLNOCL -cdslib cds.lib -snapshot work_lib.tb_interrupt_controller:module
+
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:51:21 KST 2026
+Exit Simulator: user
+ 
+*** Message Type: error ***
+When: Wed Jul 01 01:51:29 KST 2026
+recursive call not supported
+    while executing
+"runBusy {
+        #
+        # Execute the "do" script
+        #
+        set _buffer ""
+        uplevel $parts(redo)
+        set parts(redo) $_buffer
+
+..."
+    (object "::manager3" method "::undo::Manager::action" body line 65)
+    invoked from within
+"$_undo action $kind {
+ do {
+       1-DO> [itcl::code $this _getLocalState] =>OLDSTATE
+     1-DO> [itcl::code $this _getSchemState] =>NEWSTATE
+     
+      ..."
+    (object "::.schematicWindow0" method "::SchematicWindow::_endMoveFinal" body line 2)
+    invoked from within
+"::.schematicWindow0 _endMoveFinal {Moving Object}"
+    (in namespace inscope "::SchematicWindow" script line 1)
+    invoked from within
+"namespace inscope ::SchematicWindow {::.schematicWindow0 _endMoveFinal {Moving Object}}"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:53:28 KST 2026
+Delete schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: Wed Jul 01 01:56:28 KST 2026
+SimVision Exit.
+ 
